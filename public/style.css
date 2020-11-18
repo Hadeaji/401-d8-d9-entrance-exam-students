@@ -11,3 +11,22 @@
     slytherin colors: #1e7553, #C0C0C0
     hufflepuff colors: #f5aa2b, #000000
 */
+
+header,footer{
+    background-color: #873436;
+    width: 100%;
+    height: 100px;
+    display: block;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px auto;
+}
+
+main div {
+    background-color: #873436;
+    padding: 20px;
+    margin: 20px;
+}

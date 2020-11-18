@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="/character/:id?_method=PUT" action="POST">
+
+            <input type="text" name="name" value="<%= result.name%>">
+            <input type="text" name="patronus" value="<%= result.patronus%>">
+            <input type="text" name="alive" value="<%= result.alive%>">
+    
+            <button type="submit">Update</button>
+        </form>
+    
+        <form action="/character/:id?_method=DELETE" action="POST">
+    
+            <input type="text" name="name" value="<%= result.id%>">
+    
+            <button type="submit">Delete</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

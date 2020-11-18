@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+    <header></header>
+    <main>
+        <% result.forEach(element=>{%>
+            <div>
+                <h2><%= element.name%></h2> 
+                <h3><%= element.patronus%></h3> 
+                <h3><%= element.alive%></h3>
+        
+        
+                <form action="/my-characters/<%= element.id%>" method="POST">
+                    <input type="hidden" name="id" value="<%= element.id%>">
+        
+        
+                    <button type="submit">view</button>
+                </form>
+        
+            </div>
+            
+    
+            <br>
+            <br>
+        <%})%>
+    </main>
+    <footer></footer>
+</body>
+</html>
